@@ -55,7 +55,18 @@ const removeFromDb = id => {
 export { addToDb, removeFromDb };
 ```
 
-- Click Handler for this project: Here (_id) is product id
+- Click Handler for this project are given below. Here (_id) is product id
 ```
 <button onClick={() => handlePurchase(_id)}>Purchase</button><br/>
+```
+
+- Click Handler function for this project are given below:
+```
+const handlePurchase = id => {
+    addToDb(id);
+}
+
+const handleRemove = id => {
+    removeFromDb(id);
+}
 ```
